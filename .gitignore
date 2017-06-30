@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!.vimrc
+!.vim/
+!.vim/pack
+!.vim/pack/packages
+!.vim/pack/packages/start
+!.vim/pack/packages/start/*
