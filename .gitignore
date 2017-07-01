@@ -9,3 +9,7 @@
 !.vim/pack/packages
 !.vim/pack/packages/start
 !.vim/pack/packages/start/*
+!.config
+!.config/xfce4
+!.config/xfce4/terminal
+!.config/xfce4/terminal/*
