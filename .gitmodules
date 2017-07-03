@@ -4,3 +4,6 @@
 [submodule ".vim/pack/packages/start/nerdtree"]
 	path = .vim/pack/packages/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule ".vim/pack/packages/start/ctrlp.vim"]
+	path = .vim/pack/packages/start/ctrlp.vim
+	url = git@github.com:ctrlpvim/ctrlp.vim.git
