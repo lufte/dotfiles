@@ -10,3 +10,6 @@
 [submodule ".vim/pack/packages/start/editorconfig-vim"]
 	path = .vim/pack/packages/start/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule ".vim/pack/packages/start/typescript-vim"]
+	path = .vim/pack/packages/start/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
