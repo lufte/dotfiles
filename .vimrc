@@ -21,3 +21,6 @@ set backspace=indent,eol,start
 
 " enable ruler
 set ruler
+
+" move swap files to /tmp
+set directory^=/tmp//
