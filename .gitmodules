@@ -13,3 +13,6 @@
 [submodule ".vim/pack/packages/start/typescript-vim"]
 	path = .vim/pack/packages/start/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
+[submodule ".vim/pack/packages/start/MatchTag"]
+	path = .vim/pack/packages/start/MatchTag
+	url = git@github.com:gregsexton/MatchTag.git
