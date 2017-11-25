@@ -13,7 +13,7 @@ indent_style = space
 # Possible values - an integer, tab
 indent_size = 2
 
-max_line_length=89
+max_line_length=79
 
 # Line ending file format
 # Possible values - lf, crlf, cr
