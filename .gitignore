@@ -15,3 +15,5 @@
 !.config/xfce4
 !.config/xfce4/terminal
 !.config/xfce4/terminal/terminalrc
+!.config/qutebrowser
+!.config/qutebrowser/config.py
