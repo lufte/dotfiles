@@ -6,6 +6,7 @@
 !.editorconfig
 !.tmux.conf
 !.vimrc
+!.bash_aliases
 !.vim/
 !.vim/pack
 !.vim/pack/packages
