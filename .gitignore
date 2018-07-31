@@ -18,3 +18,10 @@
 !.config/xfce4/terminal/terminalrc
 !.config/qutebrowser
 !.config/qutebrowser/config.py
+!.local/
+!.local/share
+!.local/share/qutebrowser
+!.local/share/qutebrowser/greasemonkey
+!.local/share/qutebrowser/greasemonkey/*
+!.local/share/qutebrowser/userscripts
+!.local/share/qutebrowser/userscripts/*

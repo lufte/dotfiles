@@ -24,3 +24,7 @@ config.unbind('J', mode='normal')
 config.unbind('K', mode='normal')
 config.bind('J', 'tab-prev')
 config.bind('K', 'tab-next')
+
+# Bind userscripts
+config.bind(',es', 'set-cmd-text -s :spawn --userscript qb-translate-es-en.sh')
+config.bind(',en', 'set-cmd-text -s :spawn --userscript qb-translate-en-es.sh')
