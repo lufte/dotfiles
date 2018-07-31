@@ -4,15 +4,9 @@
 [submodule ".vim/pack/packages/start/nerdtree"]
 	path = .vim/pack/packages/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule ".vim/pack/packages/start/ctrlp.vim"]
-	path = .vim/pack/packages/start/ctrlp.vim
-	url = git@github.com:ctrlpvim/ctrlp.vim.git
 [submodule ".vim/pack/packages/start/editorconfig-vim"]
 	path = .vim/pack/packages/start/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
-[submodule ".vim/pack/packages/start/typescript-vim"]
-	path = .vim/pack/packages/start/typescript-vim
-	url = git@github.com:leafgarland/typescript-vim.git
 [submodule ".vim/pack/packages/start/MatchTag"]
 	path = .vim/pack/packages/start/MatchTag
 	url = git@github.com:gregsexton/MatchTag.git
