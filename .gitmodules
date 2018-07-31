@@ -10,6 +10,3 @@
 [submodule ".vim/pack/packages/start/MatchTag"]
 	path = .vim/pack/packages/start/MatchTag
 	url = git@github.com:gregsexton/MatchTag.git
-[submodule ".local/share/qutebrowser/userscripts/qb-translate"]
-	path = .local/share/qutebrowser/userscripts/qb-translate
-	url = git@github.com:lufte/qb-translate.git

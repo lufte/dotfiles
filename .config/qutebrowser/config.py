@@ -25,6 +25,6 @@ config.unbind('K', mode='normal')
 config.bind('J', 'tab-prev')
 config.bind('K', 'tab-next')
 
-# Bind userscripts
-config.bind(',es', 'set-cmd-text -s :spawn --userscript qb-translate-es-en.sh')
-config.bind(',en', 'set-cmd-text -s :spawn --userscript qb-translate-en-es.sh')
+# Quick wordreference translations
+config.bind(',es', 'set-cmd-text :open -t https://www.wordreference.com/es/en/translation.asp?spen=')
+config.bind(',en', 'set-cmd-text :open -t https://www.wordreference.com/es/translation.asp?tranword=')
