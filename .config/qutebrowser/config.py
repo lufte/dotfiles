@@ -28,3 +28,9 @@ config.bind('K', 'tab-next')
 # Quick wordreference translations
 config.bind(',es', 'set-cmd-text :open -t https://www.wordreference.com/es/en/translation.asp?spen=')
 config.bind(',en', 'set-cmd-text :open -t https://www.wordreference.com/es/translation.asp?tranword=')
+
+# qute-pass
+config.bind(',ps', 'spawn --userscript qute-pass')
+config.bind(',pu', 'spawn --userscript qute-pass --username-only')
+config.bind(',pp', 'spawn --userscript qute-pass --password-only')
+config.bind(',po', 'spawn --userscript qute-pass --otp-only')
