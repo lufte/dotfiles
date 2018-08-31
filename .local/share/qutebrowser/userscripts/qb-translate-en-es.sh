@@ -1,1 +1,0 @@
-qb-translate/qb-translate-en-es.sh
