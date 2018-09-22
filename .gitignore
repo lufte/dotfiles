@@ -16,6 +16,9 @@
 !.config/xfce4
 !.config/xfce4/terminal
 !.config/xfce4/terminal/terminalrc
+!.config/xfce4/xfconf
+!.config/xfce4/xfconf/xfce-perchannel-xml
+!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
 !.config/qutebrowser
 !.config/qutebrowser/config.py
 !.local/
