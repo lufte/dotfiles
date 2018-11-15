@@ -10,3 +10,6 @@
 [submodule ".vim/pack/packages/start/nim.vim"]
 	path = .vim/pack/packages/start/nim.vim
 	url = git@github.com:zah/nim.vim.git
+[submodule ".vim/pack/packages/start/typescript-vim"]
+	path = .vim/pack/packages/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
