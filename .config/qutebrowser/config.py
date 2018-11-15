@@ -34,3 +34,12 @@ config.bind(',ps', 'spawn --userscript qute-pass')
 config.bind(',pu', 'spawn --userscript qute-pass --username-only')
 config.bind(',pp', 'spawn --userscript qute-pass --password-only')
 config.bind(',po', 'spawn --userscript qute-pass --otp-only')
+
+# Unblock some domains
+c.content.host_blocking.whitelist = [
+    'piwik.org',
+    'thepiratebay.org'
+]
+
+# Set spellcheck languajes
+c.spellcheck.languages = ['en-US', 'es-ES']
