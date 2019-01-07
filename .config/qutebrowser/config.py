@@ -51,12 +51,17 @@ c.spellcheck.languages = ['en-US', 'es-ES']
 c.content.javascript.enabled = False
 
 # ...but enable it in some sites
-with open(os.path.join(standarddir.config(),
-                       'javascript_enabled_patterns.txt')) as patterns:
-    pattern = patterns.readline().strip()
-    while pattern:
-        config.set('content.javascript.enabled', True, pattern)
+try:
+    with open(os.path.join(standarddir.config(),
+                           'javascript_enabled_patterns.txt')) as patterns:
         pattern = patterns.readline().strip()
+        while pattern:
+            config.set('content.javascript.enabled', True, pattern)
+            pattern = patterns.readline().strip()
+except FileNotFoundError:
+    # No file? No problem
+    pass
 
-# ...and make a shortcut for our enable-javascript userscript
-config.bind(',ej', 'spawn --userscript enable-javascript')
+# ...and make a shortcut for our qutejs userscript
+config.bind(',ejp', 'spawn --userscript qutejs.py')
+config.bind(',ejt', 'spawn --userscript qutejs.py -t')

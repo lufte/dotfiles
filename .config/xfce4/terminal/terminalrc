@@ -31,4 +31,6 @@ MiscDefaultWorkingDir=
 MiscRewrapOnResize=TRUE
 MiscUseShiftArrowsToScroll=FALSE
 MiscSlimTabs=FALSE
+MiscShowRelaunchDialog=TRUE
+MiscNewTabAdjacent=FALSE
 
