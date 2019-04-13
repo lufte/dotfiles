@@ -66,9 +66,8 @@ except FileNotFoundError:
 config.bind(',ejp', 'spawn --userscript qutejs.py')
 config.bind(',ejt', 'spawn --userscript qutejs.py -t')
 
-# Use a "supported" user agent for whatsapp ಠ_ಠ
-config.set(
-    'content.headers.user_agent',
-    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36',
-    '*.whatsapp.com'
-)
+# Use a "supported" user agent for whatsapp and slack ಠ_ಠ
+ua = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 ' \
+     '(KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36'
+config.set('content.headers.user_agent', ua, '*.whatsapp.com')
+config.set('content.headers.user_agent', ua, '*.slack.com')
