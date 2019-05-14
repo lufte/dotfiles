@@ -21,3 +21,5 @@ set ruler
 
 " move swap files to /tmp
 set directory^=/tmp//
+
+set encoding=utf-8
