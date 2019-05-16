@@ -37,6 +37,9 @@ config.bind(',pu', 'spawn --userscript qute-pass --username-only')
 config.bind(',pp', 'spawn --userscript qute-pass --password-only')
 config.bind(',po', 'spawn --userscript qute-pass --otp-only')
 
+# Custom shortcuts
+config.bind(',od', 'download-open')
+
 # Unblock some domains
 c.content.host_blocking.whitelist = [
     'piwik.org',
