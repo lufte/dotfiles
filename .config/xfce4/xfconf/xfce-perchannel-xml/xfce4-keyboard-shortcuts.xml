@@ -34,7 +34,7 @@
       <property name="XF86AudioNext" type="string" value="/home/lufte/.scripts/player_next.sh"/>
       <property name="XF86AudioPlay" type="string" value="/home/lufte/.scripts/player_play_pause.sh"/>
       <property name="XF86AudioPrev" type="string" value="/home/lufte/.scripts/player_previous.sh"/>
-      <property name="XF86Launch1" type="string" value="xrandr --output LVDS-1 --auto --output VGA-1 --off"/>
+      <property name="XF86Launch1" type="string" value="xrandr --output LVDS1 --auto --output VGA1 --off --output HDMI1 --off"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
