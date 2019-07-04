@@ -95,3 +95,6 @@ config.set('content.headers.user_agent', ua, '*.slack.com')
 if platform == 'Darwin':
     c.editor.command = ['/Applications/MacVim.app/Contents/bin/mvim',
                         '-f', '{file}', '-c', 'normal {line}G{column0}l']
+
+config.set('content.javascript.can_open_tabs_automatically', True,
+           '*.zlibra.com')
