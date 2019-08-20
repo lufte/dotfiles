@@ -71,22 +71,6 @@ c.spellcheck.languages = ['en-US', 'es-ES']
 # Disable javascript
 c.content.javascript.enabled = False
 
-# ...but enable it in some sites
-try:
-    with open(os.path.join(standarddir.config(),
-                           'javascript_enabled_patterns.txt')) as patterns:
-        pattern = patterns.readline().strip()
-        while pattern:
-            config.set('content.javascript.enabled', True, pattern)
-            pattern = patterns.readline().strip()
-except FileNotFoundError:
-    # No file? No problem
-    pass
-
-# ...and make a shortcut for our qutejs userscript
-config.bind(',ejp', 'spawn --userscript qutejs.py')
-config.bind(',ejt', 'spawn --userscript qutejs.py -t')
-
 # Use a "supported" user agent for whatsapp and slack ಠ_ಠ
 ua = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 ' \
      '(KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36'
@@ -112,3 +96,5 @@ def redirect(info: interceptor.Request):
         except RedirectFailedException:
             pass
 interceptor.register(redirect)
+
+config.load_autoconfig()
