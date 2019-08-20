@@ -33,4 +33,8 @@ MiscUseShiftArrowsToScroll=FALSE
 MiscSlimTabs=FALSE
 MiscShowRelaunchDialog=TRUE
 MiscNewTabAdjacent=FALSE
+RunCustomCommand=TRUE
+CustomCommand=tmux
+MiscSearchDialogOpacity=100
+MiscShowUnsafePasteDialog=TRUE
 
