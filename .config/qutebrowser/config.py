@@ -85,6 +85,10 @@ if platform == 'Darwin':
 config.set('content.javascript.can_open_tabs_automatically', True,
            '*.zlibra.com')
 
+# Fix cursor not visible in private mode
+c.colors.statusbar.private.bg = "#444444"
+c.colors.statusbar.command.private.bg = "#444444"
+
 # Custom redirects
 def redirect(info: interceptor.Request):
     url = info.request_url
