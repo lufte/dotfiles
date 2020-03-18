@@ -13,7 +13,7 @@ indent_style = space
 # Possible values - an integer, tab
 indent_size = 2
 
-max_line_length=79
+max_line_length=99
 
 # Line ending file format
 # Possible values - lf, crlf, cr
@@ -31,5 +31,8 @@ trim_trailing_whitespace = true
 # Possible values - true, false
 insert_final_newline = true
 
-[*.{py,rs}]
+[*.{py,rs,java}]
 indent_size= 4
+
+[*.py]
+max_line_length=79
