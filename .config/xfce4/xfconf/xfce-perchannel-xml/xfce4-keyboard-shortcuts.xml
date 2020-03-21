@@ -12,11 +12,13 @@
       </property>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="empty"/>
       <property name="XF86Display" type="empty"/>
       <property name="&lt;Super&gt;p" type="empty"/>
       <property name="&lt;Primary&gt;Escape" type="empty"/>
       <property name="XF86WWW" type="empty"/>
       <property name="XF86Mail" type="empty"/>
+      <property name="Print" type="empty"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Delete" type="empty"/>
     </property>
     <property name="custom" type="empty">
@@ -34,7 +36,7 @@
       <property name="XF86AudioNext" type="string" value="/home/lufte/.scripts/player_next.sh"/>
       <property name="XF86AudioPlay" type="string" value="/home/lufte/.scripts/player_play_pause.sh"/>
       <property name="XF86AudioPrev" type="string" value="/home/lufte/.scripts/player_previous.sh"/>
-      <property name="XF86Launch1" type="string" value="xrandr --output LVDS1 --auto --output VGA1 --off --output HDMI1 --off"/>
+      <property name="Launch1" type="string" value="xrandr --output LVDS-1 --auto"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

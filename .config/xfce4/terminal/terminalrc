@@ -1,6 +1,6 @@
 [Configuration]
 BackgroundDarkness=0.900000
-FontName=Bitstream Vera Sans Mono 10
+FontName=Bitstream Vera Sans Mono 11
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=TRUE
@@ -36,5 +36,5 @@ MiscNewTabAdjacent=FALSE
 RunCustomCommand=TRUE
 CustomCommand=tmux
 MiscSearchDialogOpacity=100
-MiscShowUnsafePasteDialog=TRUE
+MiscShowUnsafePasteDialog=FALSE
 
