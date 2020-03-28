@@ -37,6 +37,16 @@ config.bind('K', 'tab-next')
 config.bind(',es', 'set-cmd-text :open -t https://www.wordreference.com/es/en/translation.asp?spen=')
 config.bind(',en', 'set-cmd-text :open -t https://www.wordreference.com/es/translation.asp?tranword=')
 
+# Hotkey for opening in private window
+config.bind(',op', 'set-cmd-text -s :open -p')
+
+# Show images in www.elpais.com.uy
+config.bind(
+    ',ep',
+    "jseval document.querySelectorAll('img[data-src]').forEach(i => {i.setAttribute('src', i.getAttribute('data-src'))});"
+)
+
+
 # qute-pass
 if platform == 'Darwin':
     dmenu_base = r'spawn --userscript qute-pass --dmenu-invocation "kies -p \"Select: \""'
