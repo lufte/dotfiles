@@ -40,6 +40,10 @@ config.bind(',en', 'set-cmd-text :open -t https://www.wordreference.com/es/trans
 # Hotkey for opening in private window
 config.bind(',op', 'set-cmd-text -s :open -p')
 
+# Enable/disable javascript using qutejs
+config.bind(',tsh', 'spawn --userscript qutejs.py -t')
+config.bind(',tSH', 'spawn --userscript qutejs.py')
+
 # Show images in www.elpais.com.uy
 config.bind(
     ',ep',
