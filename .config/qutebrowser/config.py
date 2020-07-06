@@ -123,6 +123,7 @@ def new_on_navigation_request(self, navigation):
     if self.url().host() in (
             'www.elpais.com.uy',
             'www.ovaciondigital.com.uy',
+            'negocios.elpais.com.uy',
     ):
         if navigation.url.path().startswith('/user/suscripcion'):
             navigation.accepted = False
