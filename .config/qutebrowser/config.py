@@ -120,10 +120,11 @@ interceptor.register(redirect)
 AbstractTab._old_on_navigation_request = AbstractTab._on_navigation_request
 def new_on_navigation_request(self, navigation):
     self._old_on_navigation_request(navigation)
-    if self.url().host() == 'www.elpais.com.uy':
-        if navigation.url.toString().startswith(
-                'https://www.elpais.com.uy/user/suscripcion'
-        ):
+    if self.url().host() in (
+            'www.elpais.com.uy',
+            'www.ovaciondigital.com.uy',
+    ):
+        if navigation.url.path().startswith('/user/suscripcion'):
             navigation.accepted = False
             message.warning(
                 "Blocked redirection to " + navigation.url.toString()
