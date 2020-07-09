@@ -117,13 +117,15 @@ def redirect(info: interceptor.Request):
 interceptor.register(redirect)
 
 # Prevent meta redirects in www.elpais.com.uy
-AbstractTab._old_on_navigation_request = AbstractTab._on_navigation_request
+if not hasattr(AbstractTab, '_old_on_navigation_request'):
+    AbstractTab._old_on_navigation_request = AbstractTab._on_navigation_request
 def new_on_navigation_request(self, navigation):
     self._old_on_navigation_request(navigation)
     if self.url().host() in (
             'www.elpais.com.uy',
             'www.ovaciondigital.com.uy',
             'negocios.elpais.com.uy',
+            'www.tvshow.com.uy',
     ):
         if navigation.url.path().startswith('/user/suscripcion'):
             navigation.accepted = False
