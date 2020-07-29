@@ -1,9 +1,6 @@
 [submodule ".vim/pack/packages/start/vim-elixir"]
 	path = .vim/pack/packages/start/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
-[submodule ".vim/pack/packages/start/nerdtree"]
-	path = .vim/pack/packages/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule ".vim/pack/packages/start/editorconfig-vim"]
 	path = .vim/pack/packages/start/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
