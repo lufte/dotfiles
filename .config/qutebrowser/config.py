@@ -35,7 +35,8 @@ config.bind('J', 'tab-prev')
 config.bind('K', 'tab-next')
 
 # Sort history by frecency
-c.completion.web_history.sort_criterion = 'frecency'
+if platform != 'Darwin':
+    c.completion.web_history.sort_criterion = 'frecency'
 
 # Quick wordreference translations
 config.bind(',es', 'set-cmd-text :open -t https://www.wordreference.com/es/en/translation.asp?spen=')
