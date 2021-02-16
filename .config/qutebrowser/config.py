@@ -139,4 +139,4 @@ def new_on_navigation_request(self, navigation):
             )
 AbstractTab._on_navigation_request = new_on_navigation_request
 
-config.load_autoconfig(False)
+config.load_autoconfig()
