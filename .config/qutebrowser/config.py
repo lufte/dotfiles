@@ -34,6 +34,9 @@ config.unbind('K', mode='normal')
 config.bind('J', 'tab-prev')
 config.bind('K', 'tab-next')
 
+# Unbind the "u" shortcut
+config.unbind('u', mode='normal')
+
 # Sort history by frecency
 if platform != 'Darwin':
     c.completion.web_history.sort_criterion = 'frecency'
