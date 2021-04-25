@@ -87,6 +87,7 @@ if platform == 'Darwin':
     c.content.blocking.whitelist.extend([
         'onesignal.com',
     ])
+c.content.cookies.accept = 'no-3rdparty'
 
 # Set spellcheck languajes
 c.spellcheck.languages = ['en-US', 'es-ES']
