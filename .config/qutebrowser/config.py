@@ -28,6 +28,9 @@ c.statusbar.show = 'always'
 #   - switching: Show the tab bar when switching tabs.
 c.tabs.show = 'always'
 
+# Select the previous tab when closing the current one
+c.tabs.select_on_remove = 'prev'
+
 # Swap J and K commands so they make sense
 config.unbind('J', mode='normal')
 config.unbind('K', mode='normal')
