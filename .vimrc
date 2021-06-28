@@ -20,3 +20,6 @@ set ruler
 set directory^=/tmp//
 
 set encoding=utf-8
+
+" always show the statusbar
+set laststatus=2
