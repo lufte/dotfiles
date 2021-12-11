@@ -99,10 +99,10 @@ c.spellcheck.languages = ['en-US', 'es-ES']
 c.content.javascript.enabled = False
 
 # Use a "supported" user agent for whatsapp and slack ಠ_ಠ
-ua = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 ' \
-     '(KHTML, like Gecko) Chrome/69.0.3497.128 Safari/537.36'
+ua = "Mozilla/5.0 ({os_info}; rv:90.0) Gecko/20100101 Firefox/90.0"
 config.set('content.headers.user_agent', ua, '*.whatsapp.com')
 config.set('content.headers.user_agent', ua, '*.slack.com')
+config.set('content.headers.user_agent', ua, 'accounts.google.com')
 
 # Use MacVim on MacOS
 if platform == 'Darwin':
