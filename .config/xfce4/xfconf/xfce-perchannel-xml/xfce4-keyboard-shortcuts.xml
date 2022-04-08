@@ -17,26 +17,34 @@
       <property name="&lt;Super&gt;p" type="empty"/>
       <property name="&lt;Primary&gt;Escape" type="empty"/>
       <property name="XF86WWW" type="empty"/>
+      <property name="HomePage" type="empty"/>
       <property name="XF86Mail" type="empty"/>
       <property name="Print" type="empty"/>
+      <property name="&lt;Alt&gt;Print" type="empty"/>
+      <property name="&lt;Shift&gt;Print" type="empty"/>
+      <property name="&lt;Super&gt;e" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;f" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Escape" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="empty"/>
+      <property name="&lt;Super&gt;r" type="empty">
+        <property name="startup-notify" type="empty"/>
+      </property>
       <property name="&lt;Control&gt;&lt;Alt&gt;Delete" type="empty"/>
     </property>
     <property name="custom" type="empty">
       <property name="&lt;Control&gt;&lt;Alt&gt;Delete" type="string" value="xflock4"/>
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Super&gt;e" type="string" value="thunar"/>
-      <property name="&lt;Primary&gt;F6" type="string" value="/home/lufte/.scripts/switchTouchpad"/>
-      <property name="&lt;Super&gt;s" type="string" value="/home/lufte/.scripts/switchDPMS.sh"/>
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings &amp;"/>
-      <property name="&lt;Super&gt;k" type="string" value="/home/lufte/.scripts/reload_conky_tint.sh"/>
       <property name="Print" type="string" value="xfce4-screenshooter -f"/>
       <property name="&lt;Super&gt;c" type="string" value="xfce4-terminal --maximize"/>
-      <property name="&lt;Primary&gt;q" type="string" value="false"/>
-      <property name="XF86AudioNext" type="string" value="/home/lufte/.scripts/player_next.sh"/>
-      <property name="XF86AudioPlay" type="string" value="/home/lufte/.scripts/player_play_pause.sh"/>
-      <property name="XF86AudioPrev" type="string" value="/home/lufte/.scripts/player_previous.sh"/>
       <property name="Launch1" type="string" value="xrandr --output LVDS-1 --auto"/>
       <property name="&lt;Super&gt;space" type="string" value="xfce4-appfinder"/>
+      <property name="AudioPlay" type="string" value="/home/lufte/.scripts/player_play_pause.sh">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="AudioNext" type="string" value="/home/lufte/.scripts/player_next.sh"/>
+      <property name="AudioPrev" type="string" value="/home/lufte/.scripts/player_previous.sh"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -93,6 +101,14 @@
       <property name="&lt;Primary&gt;F10" type="empty"/>
       <property name="&lt;Primary&gt;F11" type="empty"/>
       <property name="&lt;Primary&gt;F12" type="empty"/>
+      <property name="&lt;Super&gt;KP_Left" type="empty"/>
+      <property name="&lt;Super&gt;KP_Right" type="empty"/>
+      <property name="&lt;Super&gt;KP_Up" type="empty"/>
+      <property name="&lt;Super&gt;KP_Down" type="empty"/>
+      <property name="&lt;Super&gt;KP_Page_Up" type="empty"/>
+      <property name="&lt;Super&gt;KP_Home" type="empty"/>
+      <property name="&lt;Super&gt;KP_End" type="empty"/>
+      <property name="&lt;Super&gt;KP_Next" type="empty"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Down" type="empty"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Left" type="empty"/>
       <property name="&lt;Control&gt;&lt;Shift&gt;&lt;Alt&gt;Left" type="empty"/>
