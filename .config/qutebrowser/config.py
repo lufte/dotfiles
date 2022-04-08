@@ -78,6 +78,7 @@ else:
 # Custom shortcuts
 config.bind(',od', 'download-open')
 config.unbind('<Ctrl-A>')
+config.bind(',fp', ':hint links run open -p {hint-url}')
 
 # Adblocking
 c.content.blocking.method = 'both'
@@ -99,10 +100,11 @@ c.spellcheck.languages = ['en-US', 'es-ES']
 c.content.javascript.enabled = False
 
 # Use a "supported" user agent for whatsapp and slack ಠ_ಠ
-ua = "Mozilla/5.0 ({os_info}; rv:90.0) Gecko/20100101 Firefox/90.0"
+ua = "Mozilla/5.0 ({os_info}; rv:91.0) Gecko/20100101 Firefox/91.0"
+
 config.set('content.headers.user_agent', ua, '*.whatsapp.com')
 config.set('content.headers.user_agent', ua, '*.slack.com')
-config.set('content.headers.user_agent', ua, 'accounts.google.com')
+config.set('content.headers.user_agent', ua, '*.google.com')
 
 # Use MacVim on MacOS
 if platform == 'Darwin':
