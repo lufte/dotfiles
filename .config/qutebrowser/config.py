@@ -31,6 +31,9 @@ c.tabs.show = 'always'
 # Select the previous tab when closing the current one
 c.tabs.select_on_remove = 'prev'
 
+# Close the window when closing the last tab
+c.tabs.last_close = 'close'
+
 # Swap J and K commands so they make sense
 config.unbind('J', mode='normal')
 config.unbind('K', mode='normal')
