@@ -82,6 +82,8 @@ else:
 config.bind(',od', 'download-open')
 config.unbind('<Ctrl-A>')
 config.bind(',fp', ':hint links run open -p {hint-url}')
+config.unbind(';r')
+config.bind(';r', ':hint --rapid all tab-bg')
 
 # Adblocking
 c.content.blocking.method = 'both'
