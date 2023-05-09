@@ -29,6 +29,7 @@
       <property name="&lt;Super&gt;r" type="empty">
         <property name="startup-notify" type="empty"/>
       </property>
+      <property name="&lt;Alt&gt;&lt;Super&gt;s" type="empty"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Delete" type="empty"/>
     </property>
     <property name="custom" type="empty">
@@ -103,8 +104,8 @@
       <property name="&lt;Primary&gt;F12" type="empty"/>
       <property name="&lt;Super&gt;KP_Left" type="empty"/>
       <property name="&lt;Super&gt;KP_Right" type="empty"/>
-      <property name="&lt;Super&gt;KP_Up" type="empty"/>
       <property name="&lt;Super&gt;KP_Down" type="empty"/>
+      <property name="&lt;Super&gt;KP_Up" type="empty"/>
       <property name="&lt;Super&gt;KP_Page_Up" type="empty"/>
       <property name="&lt;Super&gt;KP_Home" type="empty"/>
       <property name="&lt;Super&gt;KP_End" type="empty"/>
