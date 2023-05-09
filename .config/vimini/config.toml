@@ -1,0 +1,135 @@
+# SOLARIZED HEX     RGB         USE CASE
+# --------- ------- ----------- ---------------
+# base03    #002b36   0  43  54 Dark background
+# base02    #073642   7  54  66 Dark background
+# base01    #586e75  88 110 117 Content
+# base00    #657b83 101 123 131 Content
+# base0     #839496 131 148 150 Content
+# base1     #93a1a1 147 161 161 Content
+# base2     #eee8d5 238 232 213 Light background
+# base3     #fdf6e3 253 246 227 Light background
+# yellow    #b58900 181 137   0 Accent
+# orange    #cb4b16 203  75  22 Accent
+# red       #dc322f 220  50  47 Accent
+# magenta   #d33682 211  54 130 Accent
+# violet    #6c71c4 108 113 196 Accent
+# blue      #268bd2  38 139 210 Accent
+# cyan      #2aa198  42 161 152 Accent
+# green     #859900 133 153   0 Accent
+
+[styles.document.colors]
+# background_color = [253, 246, 227]
+# text_color = [88, 110, 117]
+# link_color = [38, 139, 210]
+# pre_color = [88, 110, 117]
+# header1_color = [88, 110, 117]
+# header2_color = [88, 110, 117]
+# header3_color = [88, 110, 117]
+# list_item_color = [88, 110, 117]
+# quote_color = [88, 110, 117]
+background_color = [0, 43, 54]
+text_color = [147, 161, 161]
+link_color = [211, 54, 130]
+pre_color = [181, 137, 0]
+header1_color = [108, 113, 196]
+header2_color = [108, 113, 196]
+header3_color = [108, 113, 196]
+list_item_color = [147, 161, 161]
+quote_color = [147, 161, 161]
+
+[styles.error_document.colors]
+background_color = [230, 190, 180]
+text_color = [0, 0, 0]
+link_color = [38, 139, 210]
+pre_color = [0, 0, 0]
+header1_color = [0, 0, 0]
+header2_color = [0, 0, 0]
+header3_color = [0, 0, 0]
+list_item_color = [0, 0, 0]
+quote_color = [0, 0, 0]
+
+[pki]
+client_certificate_path = "/home/lufte/.local/share/vimini/client-cert.pem"
+[[key_bindings.normal_bindings]]
+command = "mode-enter command"
+sequence = "<Shift+:>"
+
+[[key_bindings.normal_bindings]]
+command = "set-cmd-text --space open"
+sequence = "o"
+
+[[key_bindings.normal_bindings]]
+command = "set-cmd-text --space open --tab"
+sequence = "O"
+
+[[key_bindings.normal_bindings]]
+command = "back"
+sequence = "H"
+
+[[key_bindings.normal_bindings]]
+command = "forward"
+sequence = "L"
+
+[[key_bindings.normal_bindings]]
+command = "scroll-to-perc 0"
+sequence = "gg"
+
+[[key_bindings.normal_bindings]]
+command = "scroll-to-perc 100"
+sequence = "G"
+
+[[key_bindings.normal_bindings]]
+command = "mode-enter hint-same-tab"
+sequence = "f"
+
+[[key_bindings.normal_bindings]]
+command = "mode-enter hint-new-tab-switch"
+sequence = "F"
+
+[[key_bindings.normal_bindings]]
+command = "mode-enter hint-rapid"
+sequence = ";r"
+
+[[key_bindings.normal_bindings]]
+command = "reload"
+sequence = "r"
+
+[[key_bindings.normal_bindings]]
+command = "tab-prev"
+sequence = "J"
+
+[[key_bindings.normal_bindings]]
+command = "tab-next"
+sequence = "K"
+
+[[key_bindings.normal_bindings]]
+command = "tab-close"
+sequence = "d"
+
+[[key_bindings.normal_bindings]]
+command = "yank"
+sequence = "yy"
+
+[[key_bindings.command_bindings]]
+command = "mode-enter normal"
+sequence = "<Esc>"
+
+[[key_bindings.hint_same_tab_bindings]]
+command = "mode-enter normal"
+sequence = "<Esc>"
+
+[[key_bindings.hint_new_tab_bindings]]
+command = "mode-enter normal"
+sequence = "<Esc>"
+
+[[key_bindings.hint_new_tab_switch_bindings]]
+command = "mode-enter normal"
+sequence = "<Esc>"
+
+[[key_bindings.hint_rapid_bindings]]
+command = "mode-enter normal"
+sequence = "<Esc>"
+
+[[key_bindings.insert_bindings]]
+command = "mode-enter normal"
+sequence = "<Esc>"
