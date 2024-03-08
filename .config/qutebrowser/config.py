@@ -105,7 +105,7 @@ c.spellcheck.languages = ['en-US', 'es-ES']
 c.content.javascript.enabled = False
 
 # Use a "supported" user agent for whatsapp and slack ಠ_ಠ
-ua = "Mozilla/5.0 ({os_info}; rv:91.0) Gecko/20100101 Firefox/91.0"
+ua = "Mozilla/5.0 ({os_info}; rv:109.0) Gecko/20100101 Firefox/115.0"
 
 config.set('content.headers.user_agent', ua, '*.whatsapp.com')
 config.set('content.headers.user_agent', ua, '*.slack.com')
@@ -126,7 +126,17 @@ c.colors.statusbar.command.private.bg = "#444444"
 # Custom redirects
 def redirect(info: interceptor.Request):
     url = info.request_url
-    if url.host() == 'www.reddit.com':
+    if (
+            url.host() == 'www.reddit.com'
+            and not url.path().startswith('/gallery/')
+            and not url.path().startswith('/media')
+            and not url.path().startswith('/poll')
+            and not url.path().startswith('/topics')
+            and not url.path().startswith('/settings')
+            and not url.path().startswith('/community-points')
+            and not url.path().startswith('/rpoll')
+            and not url.path().startswith('/rpan')
+    ):
         url.setHost('old.reddit.com')
         try:
             info.redirect(url)
