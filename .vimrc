@@ -23,3 +23,6 @@ set encoding=utf-8
 
 " always show the statusbar
 set laststatus=2
+
+" don't wrap by default
+set nowrap
