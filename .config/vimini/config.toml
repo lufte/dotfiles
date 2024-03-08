@@ -1,3 +1,9 @@
+styles.document_font = "DejaVu Serif"
+styles.preformatted_font = "DejaVu Sans Mono"
+styles.chrome_font = "DejaVu Sans Mono"
+styles.spinner_frames = ["╫", "╪"]
+styles.spinner_interval = 100
+
 # SOLARIZED HEX     RGB         USE CASE
 # --------- ------- ----------- ---------------
 # base03    #002b36   0  43  54 Dark background
@@ -18,24 +24,24 @@
 # green     #859900 133 153   0 Accent
 
 [styles.document.colors]
-# background_color = [253, 246, 227]
-# text_color = [88, 110, 117]
-# link_color = [38, 139, 210]
-# pre_color = [88, 110, 117]
-# header1_color = [88, 110, 117]
-# header2_color = [88, 110, 117]
-# header3_color = [88, 110, 117]
-# list_item_color = [88, 110, 117]
-# quote_color = [88, 110, 117]
-background_color = [0, 43, 54]
-text_color = [147, 161, 161]
-link_color = [211, 54, 130]
-pre_color = [181, 137, 0]
-header1_color = [108, 113, 196]
-header2_color = [108, 113, 196]
-header3_color = [108, 113, 196]
-list_item_color = [147, 161, 161]
-quote_color = [147, 161, 161]
+background_color = [253, 246, 227]
+text_color = [88, 110, 117]
+link_color = [38, 139, 210]
+pre_color = [42, 161, 152]
+header1_color = [88, 110, 117]
+header2_color = [88, 110, 117]
+header3_color = [88, 110, 117]
+list_item_color = [88, 110, 117]
+quote_color = [88, 110, 117]
+# background_color = [0, 43, 54]
+# text_color = [147, 161, 161]
+# link_color = [211, 54, 130]
+# pre_color = [181, 137, 0]
+# header1_color = [108, 113, 196]
+# header2_color = [108, 113, 196]
+# header3_color = [108, 113, 196]
+# list_item_color = [147, 161, 161]
+# quote_color = [147, 161, 161]
 
 [styles.error_document.colors]
 background_color = [230, 190, 180]
@@ -48,8 +54,15 @@ header3_color = [0, 0, 0]
 list_item_color = [0, 0, 0]
 quote_color = [0, 0, 0]
 
+[completion]
+max_visible_items = 12
+history_entries_limit = 1000
+history_sorting_criterion = "Frecency"
+bookmark_entries_limit = 50
+
 [pki]
 client_certificate_path = "/home/lufte/.local/share/vimini/client-cert.pem"
+
 [[key_bindings.normal_bindings]]
 command = "mode-enter command"
 sequence = "<Shift+:>"
@@ -133,3 +146,11 @@ sequence = "<Esc>"
 [[key_bindings.insert_bindings]]
 command = "mode-enter normal"
 sequence = "<Esc>"
+
+[[key_bindings.command_bindings]]
+command = "completion-item-next"
+sequence = "<Tab>"
+
+[[key_bindings.command_bindings]]
+command = "completion-item-prev"
+sequence = "<Shift+Tab>"
