@@ -34,6 +34,9 @@ c.tabs.select_on_remove = 'prev'
 # Close the window when closing the last tab
 c.tabs.last_close = 'close'
 
+# History
+c.completion.web_history.max_items = 1000
+
 # Swap J and K commands so they make sense
 config.unbind('J', mode='normal')
 config.unbind('K', mode='normal')
@@ -48,20 +51,22 @@ if platform != 'Darwin':
     c.completion.web_history.sort_criterion = 'frecency'
 
 # Quick wordreference translations
-config.bind(',es', 'set-cmd-text :open -t https://www.wordreference.com/es/en/translation.asp?spen=')
-config.bind(',en', 'set-cmd-text :open -t https://www.wordreference.com/es/translation.asp?tranword=')
+config.bind(',es', 'cmd-set-text :open -t https://www.wordreference.com/es/en/translation.asp?spen=')
+config.bind(',en', 'cmd-set-text :open -t https://www.wordreference.com/es/translation.asp?tranword=')
 
 # Hotkey for opening in private window
-config.bind(',op', 'set-cmd-text -s :open -p')
+config.bind(',op', 'cmd-set-text -s :open -p')
 
 # Enable/disable javascript using qutejs
 config.bind(',tsh', 'spawn --userscript qutejs.py -t')
 config.bind(',tSH', 'spawn --userscript qutejs.py')
 
-# Show images in www.elpais.com.uy
+# Show images in www.elpais.com.uy and www.elobservador.com.uy
 config.bind(
     ',ep',
     "jseval document.querySelectorAll('img[data-src]').forEach(i => {i.setAttribute('src', i.getAttribute('data-src'))});"
+    "document.querySelectorAll('img[data-td-src-property]').forEach(i => {i.setAttribute('src', i.getAttribute('data-td-src-property'))});"
+    "document.querySelectorAll('div#lector > img').forEach(i => {i.setAttribute('class', 'active')});"
 )
 
 
@@ -105,7 +110,7 @@ c.spellcheck.languages = ['en-US', 'es-ES']
 c.content.javascript.enabled = False
 
 # Use a "supported" user agent for whatsapp and slack ಠ_ಠ
-ua = "Mozilla/5.0 ({os_info}; rv:109.0) Gecko/20100101 Firefox/115.0"
+ua = "Mozilla/5.0 ({os_info}; rv:109.0) Gecko/20100101 Firefox/128.0"
 
 config.set('content.headers.user_agent', ua, '*.whatsapp.com')
 config.set('content.headers.user_agent', ua, '*.slack.com')
@@ -145,22 +150,22 @@ def redirect(info: interceptor.Request):
             pass
 interceptor.register(redirect)
 
-# Prevent meta redirects in www.elpais.com.uy
-if not hasattr(AbstractTab, '_old_on_navigation_request'):
-    AbstractTab._old_on_navigation_request = AbstractTab._on_navigation_request
-def new_on_navigation_request(self, navigation):
-    self._old_on_navigation_request(navigation)
-    if self.url().host() in (
-            'www.elpais.com.uy',
-            'www.ovaciondigital.com.uy',
-            'negocios.elpais.com.uy',
-            'www.tvshow.com.uy',
-    ):
-        if navigation.url.path().startswith('/user/suscripcion'):
-            navigation.accepted = False
-            message.warning(
-                "Blocked redirection to " + navigation.url.toString()
-            )
-AbstractTab._on_navigation_request = new_on_navigation_request
+# # Prevent meta redirects in www.elpais.com.uy
+# if not hasattr(AbstractTab, '_old_on_navigation_request'):
+#     AbstractTab._old_on_navigation_request = AbstractTab._on_navigation_request
+# def new_on_navigation_request(self, navigation):
+#     self._old_on_navigation_request(navigation)
+#     if self.url().host() in (
+#             'www.elpais.com.uy',
+#             'www.ovaciondigital.com.uy',
+#             'negocios.elpais.com.uy',
+#             'www.tvshow.com.uy',
+#     ):
+#         if navigation.url.path().startswith('/user/suscripcion'):
+#             navigation.accepted = False
+#             message.warning(
+#                 "Blocked redirection to " + navigation.url.toString()
+#             )
+# AbstractTab._on_navigation_request = new_on_navigation_request
 
 config.load_autoconfig()

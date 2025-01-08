@@ -41,11 +41,6 @@
       <property name="&lt;Super&gt;c" type="string" value="xfce4-terminal --maximize"/>
       <property name="Launch1" type="string" value="xrandr --output LVDS-1 --auto"/>
       <property name="&lt;Super&gt;space" type="string" value="xfce4-appfinder"/>
-      <property name="AudioPlay" type="string" value="/home/lufte/.scripts/player_play_pause.sh">
-        <property name="startup-notify" type="bool" value="true"/>
-      </property>
-      <property name="AudioNext" type="string" value="/home/lufte/.scripts/player_next.sh"/>
-      <property name="AudioPrev" type="string" value="/home/lufte/.scripts/player_previous.sh"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
