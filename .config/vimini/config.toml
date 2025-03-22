@@ -1,5 +1,4 @@
 start_commands = [
-  # "open gemini://localhost/20",
   "open gemini://bbs.geminispace.org/",
   "open --tab gemini://station.martinrue.com/",
   "open --tab gemini://astrobotany.mozz.us/app/plant",
@@ -55,5 +54,5 @@ quote_color = [88, 110, 117]
 # quote_color = [147, 161, 161]
 
 [[url_overrides]]
-url_pattern = "^gemini://(?:bbs.geminispace.org|station.martinrue.com|astrobotany.mozz.us)"
+url_pattern = "^gemini://(?:bbs.geminispace.org|station.martinrue.com|astrobotany.mozz.us|localhost|parser.vimini.lufte.net)"
 settings.pki.client_certificate_path = "/home/lufte/.local/share/vimini/lufte.pem"

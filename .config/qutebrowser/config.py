@@ -97,10 +97,7 @@ c.content.blocking.whitelist = [
     'thepiratebay.org',
     'https://*.archive.org',
 ]
-if platform == 'Darwin':
-    c.content.blocking.whitelist.extend([
-        'onesignal.com',
-    ])
+
 c.content.cookies.accept = 'no-3rdparty'
 
 # Set spellcheck languajes
